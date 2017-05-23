@@ -1,0 +1,16 @@
+{
+  "name": "costco",
+  "description": "UI for bulk editing CouchDB docs http://harthur.github.com/costco",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kulturpessimist/costco"
+  },
+  "scripts": {
+    "push": "couchdb-push $(cat .couchapprc | json test.db) ./costco/"
+  },
+  "dependencies": {
+    "couchdb-push":"2.3.2", 
+    "json": "^9.0.6"
+  }
+}
